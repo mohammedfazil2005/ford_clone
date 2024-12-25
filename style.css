@@ -3,6 +3,10 @@
     padding: 0;
     font-family: outfit;
 }
+h1,p,span{
+    padding: 0;
+    margin: 0;
+}
 nav{
     background-color: transparent;
     transition: 0.4s;
@@ -42,12 +46,260 @@ nav:hover .i-tag-nav i{
 .carousel-parent{
     margin-top: -70px;
 }
+.providers-parent-div{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: rgb(4, 4, 55);
+}
+.providers-child-div{
+    display: flex;
+    padding: 20px;
+    color: white;
+    gap: 20px;
+}
+
+.providers-child-div i{
+    font-size: 20px;
+}
+
+
+.ad-heading-parent{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.ad-heading-child{
+    display: flex;
+    background-color: whitesmoke;
+    margin: 30px;
+    gap: 30px;
+}
+.ad-heading-child div img{
+    width: 100%;
+    
+}
+.ad-heading-child div p{
+  
+    margin-bottom: 20px;
+}
+.ad-heading-child div button{
+    border: none;
+    background-color: #00142E;
+    border-radius: 10px;
+    padding: 6px;
+    color: white;
+}
+.ad-heading-child div button:hover{
+    background-color: #00142eb5;
+}
+.ford-safety-heading{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 60px;
+   
+}
+.ford-safety-heading-child{
+    display: flex;
+    background-color: whitesmoke;
+    margin: 30px;
+}
+.ford-safety-heading-child div{
+    margin: 10px;
+}
+.ford-safety-heading-child div img{
+    width: 350px;
+}
+.ford-safety-heading-child div h1{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+.ford-safety-heading-child div p{
+    margin-bottom: 30px;
+    width: 100%;
+    font-size: 23px;
+}
+.ford-safety-heading-child div span{
+    color: dodgerblue;
+    margin-top: 20px;
+}
+
+.ford-safety-heading-child div button{
+    border: none;
+    background-color: dodgerblue;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    margin: 0px;
+  
+}
+
+.ford-services-parent{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-color: #00142E;
+}
+.ford-services-parent img{
+    width: 100%;
+    border-radius: 10px;
+}
+.ford-services-parent div{
+    color: white;
+    margin-top: 30px;
+}
+.ford-services-parent button{
+    border: none;
+    background-color: rgb(8, 71, 134);
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    margin: 0px;
+    font-weight: bold;
+    width: 100%;
+}
+.ford-services-parent button:hover{
+    background: dodgerblue;
+}
+.ford-services-parent div h1{
+   margin-top: 10px;
+   font-weight: 300;
+}
+.ford-services-parent div p{
+    margin-top: 10px;
+    margin-bottom: 30px;
+ }
+
+
+.ford-famous-cars-parent{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 60px;
+}
+#heading-famous-cars{
+    font-weight: 300;
+    margin:0px 100px;
+}
+.ford-famous-cars-child{
+    display: flex;
+    justify-content: space-around;
+    margin:20px 100px;
+}
+
+.ford-famous-cars-child div{
+    margin: 10px;
+}
+.ford-famous-cars-child div img{
+    width: 100%;
+    border-radius: 10px;
+    transition: 1s;
+    cursor: pointer;
+}
+.ford-famous-cars-child div img:hover{
+    box-shadow: 0px 0px 23px #00142E;
+}
+.ford-famous-cars-child div h1{
+    margin: 10px;
+}
+.ford-famous-cars-child div p{
+    margin: 10px;
+}
+
+.ford-famous-cars-child div button{
+    margin: 10px;
+    border: none;
+    font-weight: bold;
+    background-color: none;
+}
+.ford-famous-cars-child div button:hover{
+    color: rgb(75, 56, 56);
+}
+
+.signup-container{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    background-color: #00142E;
+}
+
+.signup-container div{
+    padding: 40px;
+   
+    color: white;
+}
+.signup-container div h1{
+    margin: 10px;
+    font-weight: 300;
+}
+
+.signup-container div p{
+    margin: 10px;
+    font-weight: 300;
+}
+
+.signup-container div button{
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px 20px;
+    color: black;
+    margin: 10px;
+    font-weight: bold;
+}
+
+.signup-container div button:hover{
+    background: lightgray;
+}
+
 
 
 @media screen and (max-width:994px) {
     nav ul{
         margin: 0px;
     }
+    .ad-heading-child{
+      flex-direction: column;
+    }
+    .ad-heading-child div img{
+        width: 100%;
+    }
     
 }
 
+@media screen and (max-width:595px)  {
+    .ad-heading-child div img{
+        width: 100%;
+    }
+    .providers-child-div i{
+        font-size: 10px;
+    }
+    .providers-child-div div p{
+        font-size: 12px;
+    }
+    
+}
+
+@media screen and (max-width:710px) {
+    .ford-safety-heading-child{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .ford-safety-heading-child div{
+        margin: 4px;
+    }
+    .ford-safety-heading-child div img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .ford-famous-cars-child{
+        flex-direction: column;
+        margin:20px 10px;
+    }
+}
