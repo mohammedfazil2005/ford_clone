@@ -1,158 +1,281 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: outfit;
 }
-h1,p,span{
+
+h1,
+p,
+span {
     padding: 0;
     margin: 0;
 }
-nav{
-    background-color: transparent;
+
+nav {
+    background-color: whitesmoke;
     transition: 0.4s;
     cursor: pointer;
+    box-shadow: 0px 0px 10px;
 }
-nav:hover{
+
+nav:hover {
     background: white;
 }
-nav img{
+
+nav img {
     width: 100px;
 }
-nav ul{
-    margin: 0px 380px;
+
+nav ul {
+    margin: 0px 10px;
 }
-nav ul li{
-    margin: 0px 20px;
+
+nav ul li {
+    margin: 0px 10px;
 }
-.nav-li a{
-    color: white;
+
+.nav-li a {
+    color: #00142E;
     font-weight: bold;
 
 }
-nav:hover .nav-li a{
+
+nav:hover .nav-li a {
     color: darkblue;
 }
-.nav-li a:hover{
+
+.nav-li a:hover {
     border-bottom: 2px solid darkblue;
 }
 
-nav form i{
+nav form i {
     margin: 0px 20px;
-    color: white;
+    color: #00142E;
 }
-nav:hover .i-tag-nav i{
+
+nav:hover .i-tag-nav i {
     color: darkblue;
 }
-.carousel-parent{
-    margin-top: -70px;
-}
-.providers-parent-div{
+
+/* .carousel-parent{
+    margin-top: ;
+} */
+.providers-parent-div {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    background-color: rgb(4, 4, 55);
+    background-color: #00142E;
+    margin-top: 20px;
 }
-.providers-child-div{
+
+.providers-child-div {
     display: flex;
     padding: 20px;
     color: white;
     gap: 20px;
 }
 
-.providers-child-div i{
+.providers-child-div i {
     font-size: 20px;
 }
 
+.carousel-parent {
+    display: flex;
+    background-color: white;
+    height: 500px;
+    position: relative;
+    justify-content: space-between;
+    width: 100%;
+}
 
-.ad-heading-parent{
+.add-img {
+    width: 100px;
+    position: fixed;
+    top: 50px;
+    right: -20px;
+    animation-name: image-2;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    transition: 1s;
+    cursor: pointer;
+
+}
+
+.image-1 {
+    position: absolute;
+    width: 60%;
+    z-index: 1;
+    left: 100px;
+    animation-name: image-1;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+
+}
+
+.carousel-parent form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid #00142E;
+    height: 320px;
+    margin: 40px;
+    width: 600px;
+    border-radius: 10px;
+}
+
+.carousel-parent form input {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #00142E;
+}
+
+.carousel-parent form button {
+    border: none;
+    background-color: #00142E;
+    border-radius: 10px;
+    padding: 4px;
+    color: white;
+    margin: 0px;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.carousel-parent form button:hover {
+    background-color: #00142e99;
+}
+
+.carousel-parent form h1 {
+
+    margin-bottom: 15px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.add-img:hover {
+    animation-play-state: paused;
+    right: 10px;
+}
+
+
+
+
+
+
+
+
+
+.ad-heading-parent {
     display: flex;
     justify-content: center;
     margin-top: 70px;
 }
 
-.ad-heading-child{
+.ad-heading-child {
     display: flex;
     background-color: whitesmoke;
     margin: 30px;
     gap: 30px;
 }
-.ad-heading-child div img{
+
+.ad-heading-child div img {
     width: 100%;
-    
+
 }
-.ad-heading-child div p{
-  
+
+.ad-heading-child div p {
+
     margin-bottom: 20px;
 }
-.ad-heading-child div button{
+
+.ad-heading-child div button {
     border: none;
     background-color: #00142E;
     border-radius: 10px;
     padding: 6px;
     color: white;
 }
-.ad-heading-child div button:hover{
+
+.ad-heading-child div button:hover {
     background-color: #00142eb5;
 }
-.ford-safety-heading{
+
+.ford-safety-heading {
     display: flex;
     justify-content: center;
     margin-top: 20px;
     margin-bottom: 60px;
-   
+
 }
-.ford-safety-heading-child{
+
+.ford-safety-heading-child {
     display: flex;
     background-color: whitesmoke;
     margin: 30px;
 }
-.ford-safety-heading-child div{
+
+.ford-safety-heading-child div {
     margin: 10px;
 }
-.ford-safety-heading-child div img{
+
+.ford-safety-heading-child div img {
     width: 350px;
 }
-.ford-safety-heading-child div h1{
+
+.ford-safety-heading-child div h1 {
     margin-top: 20px;
     margin-bottom: 5px;
     font-weight: 400;
 }
-.ford-safety-heading-child div p{
+
+.ford-safety-heading-child div p {
     margin-bottom: 30px;
     width: 100%;
     font-size: 23px;
 }
-.ford-safety-heading-child div span{
+
+.ford-safety-heading-child div span {
     color: dodgerblue;
     margin-top: 20px;
 }
 
-.ford-safety-heading-child div button{
+.ford-safety-heading-child div button {
     border: none;
     background-color: dodgerblue;
     border-radius: 10px;
     padding: 10px;
     color: white;
     margin: 0px;
-  
+
 }
 
-.ford-services-parent{
+.ford-safety-heading-child div button:hover {
+    background: rgba(30, 143, 255, 0.647);
+}
+
+.ford-services-parent {
     display: flex;
     justify-content: center;
     margin-top: 20px;
     margin-bottom: 10px;
     background-color: #00142E;
 }
-.ford-services-parent img{
+
+.ford-services-parent img {
     width: 100%;
     border-radius: 10px;
 }
-.ford-services-parent div{
+
+.ford-services-parent div {
     color: white;
     margin-top: 30px;
 }
-.ford-services-parent button{
+
+.ford-services-parent button {
     border: none;
     background-color: rgb(8, 71, 134);
     border-radius: 10px;
@@ -162,87 +285,98 @@ nav:hover .i-tag-nav i{
     font-weight: bold;
     width: 100%;
 }
-.ford-services-parent button:hover{
+
+.ford-services-parent button:hover {
     background: dodgerblue;
 }
-.ford-services-parent div h1{
-   margin-top: 10px;
-   font-weight: 300;
+
+.ford-services-parent div h1 {
+    margin-top: 10px;
+    font-weight: 300;
 }
-.ford-services-parent div p{
+
+.ford-services-parent div p {
     margin-top: 10px;
     margin-bottom: 30px;
- }
+}
 
 
-.ford-famous-cars-parent{
+.ford-famous-cars-parent {
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin-top: 60px;
 }
-#heading-famous-cars{
+
+#heading-famous-cars {
     font-weight: 300;
-    margin:0px 100px;
-}
-.ford-famous-cars-child{
-    display: flex;
-    justify-content: space-around;
-    margin:20px 100px;
+    margin: 0px 100px;
 }
 
-.ford-famous-cars-child div{
+.ford-famous-cars-child {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 100px;
+}
+
+.ford-famous-cars-child div {
     margin: 10px;
 }
-.ford-famous-cars-child div img{
+
+.ford-famous-cars-child div img {
     width: 100%;
     border-radius: 10px;
     transition: 1s;
     cursor: pointer;
 }
-.ford-famous-cars-child div img:hover{
+
+.ford-famous-cars-child div img:hover {
     box-shadow: 0px 0px 23px #00142E;
 }
-.ford-famous-cars-child div h1{
-    margin: 10px;
-}
-.ford-famous-cars-child div p{
+
+.ford-famous-cars-child div h1 {
     margin: 10px;
 }
 
-.ford-famous-cars-child div button{
+.ford-famous-cars-child div p {
+    margin: 10px;
+}
+
+.ford-famous-cars-child div button {
     margin: 10px;
     border: none;
     font-weight: bold;
     background-color: none;
 }
-.ford-famous-cars-child div button:hover{
+
+.ford-famous-cars-child div button:hover {
     color: rgb(75, 56, 56);
 }
 
-.signup-container{
+.signup-container {
     margin-top: 60px;
     display: flex;
     flex-direction: column;
     background-color: #00142E;
 }
 
-.signup-container div{
+.signup-container div {
     padding: 40px;
-   
+
     color: white;
 }
-.signup-container div h1{
+
+.signup-container div h1 {
     margin: 10px;
     font-weight: 300;
 }
 
-.signup-container div p{
+.signup-container div p {
     margin: 10px;
     font-weight: 300;
 }
 
-.signup-container div button{
+.signup-container div button {
     border: none;
     background-color: white;
     border-radius: 10px;
@@ -252,54 +386,308 @@ nav:hover .i-tag-nav i{
     font-weight: bold;
 }
 
-.signup-container div button:hover{
+.signup-container div button:hover {
     background: lightgray;
+}
+
+.search-conatiner {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.search-conatiner div {
+    margin: 0px 100px;
+    display: flex;
+    gap: 20px;
+
+}
+
+.search-conatiner div input {
+    width: 300px;
+    border-radius: 10px;
+    padding: 6px;
+    outline: none;
+    border: 1px solid black;
+}
+
+.search-conatiner div input::placeholder {
+    color: black;
+    font-weight: 300;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-media div {
+    margin: 0px 100px;
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.social-media div i {
+    font-size: 23px;
+    color: #00142E;
+    cursor: pointer;
+
+}
+
+.social-media div i:hover {
+    color: #00142e9a;
+}
+
+footer {
+    margin-top: 60px;
+}
+
+footer div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0px 100px;
 }
 
 
 
 @media screen and (max-width:994px) {
-    nav ul{
+    nav ul {
         margin: 0px;
     }
-    .ad-heading-child{
-      flex-direction: column;
+
+    .ad-heading-child {
+        flex-direction: column;
     }
-    .ad-heading-child div img{
+
+    .ad-heading-child div img {
         width: 100%;
     }
-    
+
 }
 
-@media screen and (max-width:595px)  {
-    .ad-heading-child div img{
+@media screen and (max-width:595px) {
+    .ad-heading-child div img {
         width: 100%;
     }
-    .providers-child-div i{
+
+    .providers-child-div i {
         font-size: 10px;
     }
-    .providers-child-div div p{
+
+    .providers-child-div div p {
         font-size: 12px;
     }
-    
+
 }
 
 @media screen and (max-width:710px) {
-    .ford-safety-heading-child{
+    .ford-safety-heading-child {
         flex-direction: column;
         justify-content: center;
     }
-    .ford-safety-heading-child div{
+
+    .ford-safety-heading-child div {
         margin: 4px;
     }
-    .ford-safety-heading-child div img{
+
+    .ford-safety-heading-child div img {
         width: 100%;
     }
 }
 
 @media screen and (max-width:1000px) {
-    .ford-famous-cars-child{
+    .ford-famous-cars-child {
         flex-direction: column;
-        margin:20px 10px;
+        margin: 20px 10px;
     }
+
+    .carousel-parent {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .carousel-parent form {
+        margin-top: 330px;
+    }
+}
+
+@media screen and (max-width:941px) {
+    .search-conatiner {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+
+    }
+
+    .search-conatiner div {
+        margin: 10px;
+        display: flex;
+        gap: 20px;
+
+    }
+
+    .search-conatiner div input {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:863px) {
+    .social-media {
+        flex-direction: column;
+    }
+
+    .social-media div {
+        margin: 10px;
+    }
+
+    footer {
+
+        flex-direction: column;
+    }
+
+    footer div {
+        margin: 10px;
+    }
+
+}
+
+
+
+@keyframes image-1 {
+    from {
+        left: 10px;
+    }
+
+    to {
+        left: -100px
+    }
+
+}
+
+
+@keyframes image-2 {
+    from {
+        transform: translateY(20px);
+    }
+
+    to {
+        transform: translateY(60px);
+    }
+
+}
+
+
+
+
+@media screen and (max-width:1317px) {
+    .carousel-parent {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .image-1 {
+        width: 600px;
+    }
+
+    .carousel-parent form {
+        margin: 0px;
+        margin-top: 200px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:707px) {
+    @keyframes image-1 {
+        from {
+            left: -100px;
+        }
+
+        to {
+            left: -50px
+        }
+
+    }
+
+    .image-1 {
+        width: 600px;
+
+    }
+
+    .carousel-parent form {
+        width: 100%;
+        margin: 0px;
+        margin-top: 200px;
+
+    }
+
+}
+
+
+
+
+
+@media screen and (max-width:525px) {
+    @keyframes image-1 {
+        from {
+            left: -200px;
+        }
+
+        to {
+            left: -80px
+        }
+
+    }
+
+    .image-1 {
+        width: 600px;
+        top: 100px;
+
+    }
+
+    .carousel-parent form {
+        width: 100%;
+        margin: 0px;
+        margin-top: 300px;
+    }
+
+    .providers-parent-div {
+        margin-top: 60px;
+        padding: 0;
+    }
+
+}
+
+
+
+@media screen and (max-width:500px) {
+    @keyframes image-1 {
+        from {
+            left: -200px;
+        }
+
+        to {
+            left: -150px
+        }
+
+    }
+
+    .image-1 {
+        width: 550px;
+        top: 70px;
+
+    }
+
+    .carousel-parent form {
+        width: 100%;
+        margin-top: 0px;
+        margin-top: 240px;
+    }
+
+    .providers-parent-div {
+        margin-top: 60px;
+    }
+
 }
